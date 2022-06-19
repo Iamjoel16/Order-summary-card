@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+::after::before {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+  background-color: var(--pale-blue);
+  position: relative;
+}
+
+.p {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.container__card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 30px 30px;
+  width: 310px;
+  box-shadow: 0 5px 10px grey;
+  padding-bottom: 25px;
+}
+
+.card__img {
+  margin-bottom: 5px;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+}
+
+.card__tittle {
+  font-size: 22px;
+  color: var(--Dark-blue);
+}
+
+.card__paragraph {
+  width: 270px;
+  margin-top: -10px;
+  text-align: center;
+  color: var(--Desaturated-blue);
+}
+
+.card__box {
+  display: flex;
+  background-color: var(--Very-pale-blue);
+  border-radius: 15px;
+  min-width: 280px;
+  min-height: 50px;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.box__icon {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+.box__texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--Dark-blue);
+}
+
+.box__pr {
+  font-size: 15px;
+  margin-top: -15px;
+  color: var(--Desaturated-blue);
+}
+
+.botton__cta {
+  margin-top: 30px;
+  margin-left: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--bright-blue);
+}
+
+.botones {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.botton__pago {
+  background-color: var(--bright-blue);
+  color: #fff;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px grey;
+}
+
+.botton__cancel {
+  text-align: center;
+  text-decoration: none;
+  color: var(--Desaturated-blue)
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+.card__waves {
+  position: absolute;
+  height: 50%;
+  z-index: -4;
+  width: 100%;
+}
+
+@media (min-width:1440px) {
+  .card {
+    width: 400px;
+  }
+
+}
